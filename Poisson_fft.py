@@ -16,7 +16,7 @@ def Forward(Net, N, L):
 def Back(M, N, L):
     h = L/N
     Vk2k3 = np.zeros([N-1, N-1, N-1])
-    for k2 in range(N-1): #Не очень аккуратно, зато быстро
+    for k2 in range(N-1): #Не очень аккуратно, зато быстро пишется
           for k3 in range(N-1):
                 for i in range(N-1):
                       for k1 in range(N-1):
